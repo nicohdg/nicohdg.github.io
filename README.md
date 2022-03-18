@@ -23,6 +23,5 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Push
 
-Use `git add .`, then `git commit -m "your message"` and `git push`
-Finally, use `ng serve` once more if you add stopped 
-You might also want to try this
+Use `git add .`, then `git commit -m "your message"` and `git push`.
+Finally, use `ng serve` once more if you add stopped
