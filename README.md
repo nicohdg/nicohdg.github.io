@@ -21,3 +21,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
+## Push
+
+Use `git add .`, then `git commit -m "your message"` and `git push`
+Finally, use `ng serve` once more if you add stopped it
