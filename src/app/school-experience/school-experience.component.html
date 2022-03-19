@@ -1,3 +1,32 @@
-<app-school></app-school>
-<app-school></app-school>
-<app-school></app-school>
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success">New school</button>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-xs-12">
+        <a href="#" class="list-group-item clearfix" *ngFor="let school of schools">
+            <div>
+                <span class="pull-right">
+                    <img 
+                    [src]="school.logo" 
+                    alt="{{ school.name }}" 
+                    class="img-responsive" 
+                    style="max-height: 5em;"
+                    style="max-width: 5em">
+                </span>
+                <h4 class="list-group-item-heading"
+                style="font-weight: 700x;">{{ school.name }}</h4>
+                
+                <p class="list-group-item-text"
+                style="font-weight: bold">{{ school.diplome }}</p>
+                <p class="list-group-item-text">{{ school.date_arrival }} - {{ school.date_departure }}</p>
+                <br />
+                <p style="font-style: italic;">{{ school.description }}</p>
+            </div>
+            
+        </a>
+        <app-school></app-school>
+    </div>
+</div>
