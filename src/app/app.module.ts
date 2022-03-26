@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SchoolExperienceComponent } from './school-experience/school-experience.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
-import { JobComponent } from './work-experience/job/job.component'
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,7 @@ import { JobComponent } from './work-experience/job/job.component'
     AppComponent,
     SchoolExperienceComponent,
     WorkExperienceComponent,
-    JobComponent,
+    ExperienceComponent,
   ],
   imports: [
     BrowserModule

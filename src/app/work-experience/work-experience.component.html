@@ -1,3 +1,30 @@
-<app-job></app-job>
-<app-job></app-job>
-<app-job></app-job>
+<h2>Mes expériences professionnelles</h2>
+
+<hr />
+<div class="row">
+    <div class="col-xs-12">
+        <a href="#" class="list-group-item clearfix" *ngFor="let work of works">
+            <div >
+                <span class="pull-right">
+                    <img 
+                    [src]="work.logo" 
+                    alt="{{ work.name }}" 
+                    class="img-responsive" 
+                    style="max-height: 5em;"
+                    style="max-width: 5em">
+                </span>
+
+                <h4 class="list-group-item-heading"> 
+                    <a href="{{ work.company_link }}">{{ work.name }}</a> 
+                </h4>
+                
+                <p class="list-group-item-text"
+                style="font-weight: bold">{{ work.poste }}</p>
+                <p class="list-group-item-text">{{ work.date_arrival }} - {{ work.date_departure }}</p>
+                <br />
+                <p style="font-style: italic;">{{ work.description }}</p>
+            </div>
+            
+        </a>
+    </div>
+</div>
