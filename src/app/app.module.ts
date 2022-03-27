@@ -6,6 +6,15 @@ import { HeaderComponent } from './header/header.component';
 import { SchoolExperienceComponent } from './school-experience/school-experience.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { RouterModule, Routes } from '@angular/router';
+import { SkillsComponent } from './skills/skills.component';
+import { HomeComponent } from './home/home.component';
+
+const appRoutes: Routes = [
+  { path: '', component: HomeComponent},
+  { path: 'experience', component: ExperienceComponent },
+  { path: 'skills', component: SkillsComponent}
+];
 
 @NgModule({
   declarations: [
@@ -14,9 +23,12 @@ import { ExperienceComponent } from './experience/experience.component';
     SchoolExperienceComponent,
     WorkExperienceComponent,
     ExperienceComponent,
+    SkillsComponent,
+    HomeComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]
