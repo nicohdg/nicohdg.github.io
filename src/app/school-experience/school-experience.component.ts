@@ -39,7 +39,7 @@ export class SchoolExperienceComponent implements OnInit {
     new School(
       'Lycée Sainte Ursule, Paris 17', 
       'Baccalauréat scientifique',
-      '#',
+      'https://ste-ursule.com/',
       2015, 
       2018, 
       'Spécialité mathématiques, mention Très Bien', 

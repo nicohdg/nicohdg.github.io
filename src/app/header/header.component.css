@@ -1,0 +1,19 @@
+nav { 
+    background-color: #314588;
+}
+
+nav div ul li a {
+    color:gray;
+}
+
+nav div ul li a:hover {
+    color:white;
+}
+
+nav div ul li a:active {
+    color:white;
+}
+
+nav div ul li .active {
+    color:white;
+}
