@@ -9,6 +9,9 @@ import { ExperienceComponent } from './experience/experience.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SkillsComponent } from './skills/skills.component';
 import { HomeComponent } from './home/home.component';
+import { InformatiqueSkillsComponent } from './skills/informatique-skills/informatique-skills.component';
+import { LanguagesSkillsComponent } from './skills/languages-skills/languages-skills.component';
+import { PersonalSkillsComponent } from './skills/personal-skills/personal-skills.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
@@ -25,6 +28,9 @@ const appRoutes: Routes = [
     ExperienceComponent,
     SkillsComponent,
     HomeComponent,
+    InformatiqueSkillsComponent,
+    LanguagesSkillsComponent,
+    PersonalSkillsComponent,
   ],
   imports: [
     BrowserModule,
