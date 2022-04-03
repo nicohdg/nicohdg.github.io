@@ -12,8 +12,8 @@ import { Component, Input } from '@angular/core';
       })),
       state('full', style({
         backgroundColor: '#314588',
-        width: '75%'
-      })),
+        width: '{{ level }}'
+      }), {params: { level: '10%' } }),
       transition('normal <=> full', animate(300))
     ])
   ]
@@ -26,6 +26,5 @@ export class InformatiqueSkillsComponent {
   }
 
   constructor() { }
-
 
 }

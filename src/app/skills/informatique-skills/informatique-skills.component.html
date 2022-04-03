@@ -2,7 +2,10 @@
 <div class="col-sm-12">
 
 <h2>Ce que je sais faire avec un ordinateur</h2>
-<button class="btn btn-primary" (click)="onAnimate()">Animate!</button>
+<button
+class="btn btn-primary" 
+(click)="onAnimate()"
+style="margin:0 auto; display: block;">Voir mon niveau</button>
 
 <hr />
 
@@ -11,7 +14,7 @@
         <p>Angular</p>
         <div
         style="width: 50px; height: 20px;" 
-        [@divState]="state">
+        [@divState]="{value: state, params: {level: '60%'}}">
         </div>
         <br />
     </li>
@@ -19,7 +22,7 @@
         <p>HTML</p>
         <div
         style="width: 50px; height: 20px;" 
-        [@divState]="state">
+        [@divState]="{value: state, params: {level: '70%'}}">
         </div>
         <br />
     </li>
@@ -27,27 +30,57 @@
         <p>CSS</p>
         <div
         style="width: 50px; height: 20px;" 
-        [@divState]="state">
+        [@divState]="{value: state, params: {level: '50%'}}">
         </div>
         <br />
     </li>
     <li>
         <p>JavaScript</p>
+        <div
+        style="width: 50px; height: 20px;" 
+        [@divState]="{value: state, params: {level: '50%'}}">
+        </div>
+        <br />
     </li>
     <li>
         <p>Python</p>
+        <div
+        style="width: 50px; height: 20px;" 
+        [@divState]="{value: state, params: {level: '70%'}}">
+        </div>
+        <br />
     </li>
     <li>
         <p>Go</p>
+        <div
+        style="width: 50px; height: 20px;" 
+        [@divState]="{value: state, params: {level: '33%'}}">
+        </div>
+        <br />
     </li>
     <li>
         <p>SQL</p>
+        <div
+        style="width: 50px; height: 20px;" 
+        [@divState]="state">
+        </div>
+        <br />
     </li>
     <li>
         <p>Java</p>
+        <div
+        style="width: 50px; height: 20px;" 
+        [@divState]="{value: state, params: {level: '20%'}}">
+        </div>
+        <br />
     </li>
     <li>
         <p>Haskell</p>
+        <div
+        style="width: 50px; height: 20px;" 
+        [@divState]="{value: state, params: {level: '50%'}}">
+        </div>
+        <br />
     </li>
 </ul>
 
