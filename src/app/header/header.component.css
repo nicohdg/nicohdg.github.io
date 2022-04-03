@@ -3,17 +3,17 @@ nav {
 }
 
 nav div ul li a {
-    color:gray;
+    color:#8A8DBA;
 }
 
 nav div ul li a:hover {
-    color:white;
+    color:#F7F8FF;
 }
 
 nav div ul li a:active {
-    color:white;
+    color:#F7F8FF;
 }
 
 nav div ul li .active {
-    color:white;
+    color:#F7F8FF;
 }
