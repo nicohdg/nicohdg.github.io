@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+h2 {
+    color: #314588;
+    font-weight: bolder;
+}
+
+hr {
+    width: 80%;
+}
