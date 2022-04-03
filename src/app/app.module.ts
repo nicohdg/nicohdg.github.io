@@ -30,7 +30,7 @@ const appRoutes: Routes = [
     HomeComponent,
     InformatiqueSkillsComponent,
     LanguagesSkillsComponent,
-    PersonalSkillsComponent,
+    PersonalSkillsComponent
   ],
   imports: [
     BrowserModule,
