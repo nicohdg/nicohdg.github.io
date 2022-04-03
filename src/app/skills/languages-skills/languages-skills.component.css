@@ -1,0 +1,19 @@
+div ul {
+    padding: 0;
+}
+
+div ul li {
+    list-style: none;
+    padding-top: 1em;
+}
+
+div ul li div div{
+    position:relative;
+    display: inline-block;
+    margin:0.3%;
+    width: 16%; 
+    height: 20px; 
+    color:white;
+    background-color: #83A3FF;
+    text-align: center;
+}

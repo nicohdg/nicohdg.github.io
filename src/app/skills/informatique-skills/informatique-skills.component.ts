@@ -1,5 +1,5 @@
 import { state, trigger, style, transition, animate } from '@angular/animations';
-import { Component, Input } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-informatique-skills',
