@@ -1,15 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-personal-skills',
   templateUrl: './personal-skills.component.html',
   styleUrls: ['./personal-skills.component.css']
 })
-export class PersonalSkillsComponent implements OnInit {
+export class PersonalSkillsComponent {
+  competence = '';
+  competences = [
+    'Méthode Agile',
+    'Patience',
+    'Détermination',
+    'Discretion'
+  ];
 
   constructor() { }
 
-  ngOnInit(): void {
+  onButton() {
+    this.competences.push(this.competence);
   }
 
+  onNewSkill(event: Event) {
+    this.competence = (<HTMLInputElement>event.target).value;
+  }
 }

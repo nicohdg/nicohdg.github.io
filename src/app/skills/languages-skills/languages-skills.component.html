@@ -1,3 +1,60 @@
-<h2>Les langues que je sais parler</h2>
+<div class="row">
+    <div class="col-sm-12">
+        <h2>Les langues que je connais</h2>
+        <button
+        class="btn btn-primary"
+        (click)="onAnimate()"
+        style="margin:0 auto; display: block;">Voir mon niveau</button>
+        
+        <hr />
 
-<hr />
+        <ul>
+            <li>
+                <p>Français :</p>
+                <div [@divState] = state>
+                    <div>A1</div>
+                    <div>A2</div>
+                    <div>B1</div>
+                    <div>B2</div>
+                    <div>C1</div>
+                    <div>C2</div>
+                </div>
+            </li>
+            <li>
+                <p>Anglais :</p>
+                <div [@divState] = state>
+                    <div>A1</div>
+                    <div>A2</div>
+                    <div>B1</div>
+                    <div>B2</div>
+                    <div>C1</div>
+                    <div>C2</div>
+                </div>
+            </li>
+            <li>
+                <p>Allemand :</p>
+                <div [@divState] = state>
+                    <div>A1</div>
+                    <div>A2</div>
+                    <div>B1</div>
+                    <div>B2</div>
+                </div>             
+            </li>
+            <li>
+                <p>Esperanto :</p>
+                <div [@divState] = state>
+                    <div>A1</div>
+                    <div>A2</div>
+                    <div>B1</div>
+                </div>
+            </li>
+            <li>
+                <p>Italien :</p>
+                <div [@divState] = state>
+                    <div>A1</div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</div>
