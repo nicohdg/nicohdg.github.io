@@ -18,6 +18,7 @@ export class PersonalSkillsComponent {
 
   onButton() {
     this.competences.push(this.competence);
+    this.competences.reverse();
   }
 
   onNewSkill(event: Event) {
