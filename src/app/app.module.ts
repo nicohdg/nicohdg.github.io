@@ -13,11 +13,14 @@ import { InformatiqueSkillsComponent } from './skills/informatique-skills/inform
 import { LanguagesSkillsComponent } from './skills/languages-skills/languages-skills.component';
 import { PersonalSkillsComponent } from './skills/personal-skills/personal-skills.component';
 import { FormsModule } from '@angular/forms';
+import { AuthComponent } from './auth/auth.component';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'experience', component: ExperienceComponent },
-  { path: 'skills', component: SkillsComponent}
+  { path: 'skills', component: SkillsComponent},
+  { path: 'auth', component: AuthComponent}
 ];
 
 @NgModule({
@@ -31,7 +34,9 @@ const appRoutes: Routes = [
     HomeComponent,
     InformatiqueSkillsComponent,
     LanguagesSkillsComponent,
-    PersonalSkillsComponent
+    PersonalSkillsComponent,
+    AuthComponent,
+    FooterComponent
   ],
   imports: [
     FormsModule,
