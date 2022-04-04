@@ -3,19 +3,21 @@
         <h2>Mes compétences personnelles</h2>
         <hr />
 
-        <input type="text" class="form-control" placeholder="Entrez des qualités :)" (input)="onNewSkill($event)">
+        <input 
+            type="text" 
+            class="form-control" 
+            placeholder="Entrez des qualités :)" 
+            (input)="onNewSkill($event)">
         <br />
         <button
-        class="btn btn-primary"
-        (click)="onButton()"
-        style="margin:0 auto; display: block;">Ajouter</button>
+            class="btn btn-primary"
+            (click)="onButton()"
+            style="margin:0 auto; display: block;"
+        >Ajouter</button>
 
         <p *ngFor="let skill of competences">
             - {{ skill }}
         </p>
 
-    </div>
-    <div>
-        &nbsp;
     </div>
 </div>

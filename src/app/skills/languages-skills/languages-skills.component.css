@@ -1,5 +1,6 @@
 div ul {
     padding: 0;
+    /* Pour eviter le décalage à droite habituel des listes */
 }
 
 div ul li {
@@ -10,8 +11,12 @@ div ul li {
 div ul li div div{
     position:relative;
     display: inline-block;
+    /* Pour aligner horizontalement */
+
     margin:0.3%;
-    width: 16%; 
+    width: 16%;
+     /* Pour remplir de façon égale la largeur de la page */
+     
     height: 20px; 
     color:white;
     background-color: #83A3FF;

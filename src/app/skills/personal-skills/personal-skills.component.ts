@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-personal-skills',
-  templateUrl: './personal-skills.component.html',
-  styleUrls: ['./personal-skills.component.css']
+  templateUrl: './personal-skills.component.html'
 })
 export class PersonalSkillsComponent {
   competence = '';
@@ -18,10 +17,10 @@ export class PersonalSkillsComponent {
 
   onButton() {
     this.competences.push(this.competence);
-    this.competences.reverse();
   }
 
   onNewSkill(event: Event) {
     this.competence = (<HTMLInputElement>event.target).value;
+    console.log(event);
   }
 }

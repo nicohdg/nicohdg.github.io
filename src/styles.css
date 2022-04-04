@@ -1,5 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
 
+/* Les deux propriétés suivantes permettent de pousser le footer en bas de la page */
 html {
     position:relative;
     min-height: 100%;
@@ -9,6 +9,7 @@ body {
     margin: 0 0 100px;
 }
 
+/* Le même style est appliqué à tous les h2 */
 h2 {
     color: #314588;
     font-weight: bolder;
